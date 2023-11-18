@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["!**/*"],
-  "plugins": ["@nx"],
+  "plugins": ["@nx", "@tanstack/query"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -21,5 +21,8 @@
       "rules": {}
     }
   ],
-  "extends": ["plugin:@nx/react"]
+  "extends": [
+    "plugin:@nx/react",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ]
 }

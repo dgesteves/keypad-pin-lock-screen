@@ -15,7 +15,7 @@
         "baseHref": "/",
         "main": "src/main.tsx",
         "tsConfig": "tsconfig.app.json",
-        "assets": ["src/favicon.ico", "src/assets"],
+        "assets": [],
         "styles": [],
         "scripts": [],
         "isolatedConfig": true,
@@ -29,12 +29,7 @@
           "vendorChunk": true
         },
         "production": {
-          "fileReplacements": [
-            {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment.prod.ts"
-            }
-          ],
+          "fileReplacements": [],
           "optimization": true,
           "outputHashing": "all",
           "sourceMap": false,
