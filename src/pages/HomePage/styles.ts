@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { CircleSVG } from '@ui';
 
 export const StyledHome = styled.main`
   display: flex;
@@ -14,7 +13,7 @@ export const StyledHome = styled.main`
 export const StyledCircle = styled.div`
   height: calc(100vh - 108px);
   width: 50vw;
-  background-image: url(${CircleSVG});
+  background-image: url('/src/ui/images/circle-bg.svg');
   transform: scale(1.5);
   background-position: 50%;
   background-repeat: no-repeat;
