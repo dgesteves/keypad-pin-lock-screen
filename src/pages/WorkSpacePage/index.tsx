@@ -40,6 +40,9 @@ export function WorkSpacePage() {
   const handleCheckPin = (key: number) => {
     setInputtedPin((prev) => [...prev, key]);
   };
+  const handleDeleteLastElementFromInputtedPin = () => {
+    setInputtedPin((prev) => prev.slice(0, prev.length - 1));
+  };
 
   return (
     <StyledWorkSpacePage>
@@ -60,7 +63,11 @@ export function WorkSpacePage() {
                 {key}
               </StyledKeypadCircle>
             ))}
-            <StyledKeypadCircle>X</StyledKeypadCircle>
+            <StyledKeypadCircle
+              onClick={handleDeleteLastElementFromInputtedPin}
+            >
+              X
+            </StyledKeypadCircle>
           </StyledKeypadWrapper>
         </>
       ) : (
