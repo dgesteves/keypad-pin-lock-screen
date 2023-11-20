@@ -15,13 +15,13 @@ export function useOnClickOutside<T extends HTMLElement = HTMLElement>(
       }
       handler(event);
     };
+
     document.addEventListener(mouseEvent, listener);
     document.addEventListener(touchEvent, listener);
+
     return () => {
       document.removeEventListener(mouseEvent, listener);
       document.removeEventListener(touchEvent, listener);
     };
   }, [handler, mouseEvent, touchEvent, ref]);
 }
-
-export default useOnClickOutside;
