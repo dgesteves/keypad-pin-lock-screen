@@ -24,7 +24,7 @@ export function HomePage() {
       </StyledCircle>
       <StyledEmptyState>
         <StyledEmptyStateText>
-          Balance live code interview, start on work space, let's go!
+          Keypad Pin Lock Screen, let's go!
         </StyledEmptyStateText>
         <Button
           dataCy="create-board-button-empty-state"

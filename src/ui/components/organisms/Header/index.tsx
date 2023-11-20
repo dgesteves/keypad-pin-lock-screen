@@ -19,7 +19,7 @@ export function Header() {
   return (
     <StyledHeader>
       <StyledTopBar>
-        <StyledLogo>Balance Code Interview</StyledLogo>
+        <StyledLogo>Keypad Pin Lock Screen</StyledLogo>
         <StyledTrailing>
           <StyledAvatar>DE</StyledAvatar>
         </StyledTrailing>
